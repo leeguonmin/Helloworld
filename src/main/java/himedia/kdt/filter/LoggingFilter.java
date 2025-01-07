@@ -10,9 +10,10 @@ import jakarta.servlet.FilterConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 
-
+@WebFilter("/*")
 // 인터페이스라 했지~ EncodingFilter.java 클래스랑 똑같은 순서로 세팅했음
 public class LoggingFilter implements Filter {
 	

@@ -10,7 +10,10 @@ import jakarta.servlet.FilterConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebFilter;
 
+
+@WebFilter(urlPatterns="/*")
 // 필터는 인퍼테이스
 // 니까 implements Filter 추가 
 // 컨트롤 쉬프트 o 해서 임폴트 import jakarta.servlet.Filter;

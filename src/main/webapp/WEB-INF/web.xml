@@ -27,7 +27,7 @@
   
   <!--  서블릿 등록 이전에 필터 해주는게 순서가 맞음 -->
   <!--  Filter 등록 -->
-  <filter>
+  <!-- filter>
   	<filter-name>EncodingFilter</filter-name>
   	<filter-class>himedia.kdt.filter.EncodingFilter</filter-class>
   </filter>
@@ -35,10 +35,10 @@
   <filter>
   	<filter-name>LoggingFilter</filter-name>
   	<filter-class>himedia.kdt.filter.LoggingFilter</filter-class>
-  </filter>
+  </filter-->
   
   <!-- Filter Mapping -->
-  <filter-mapping>
+  <!-- filter-mapping>
   	<filter-name>EncodingFilter</filter-name>
   	<url-pattern>/*</url-pattern>
   </filter-mapping>
@@ -46,14 +46,14 @@
   <filter-mapping>
   	<filter-name>LoggingFilter</filter-name>
   	<url-pattern>/*</url-pattern>
-  </filter-mapping>
+  </filter-mapping-->
   
   <!-- 서블릿 등록 --> 
-  <servlet>
+  <!--  servlet>
   	<servlet-name>MyFirstAervlet</servlet-name>
   	<servlet-class>HelloServlet</servlet-class>
-  	<!-- 패키지명 포함 전체 이름  -->
-  	<!-- Servlet Parameter -->
+    			<패키지명 포함 전체 이름>
+  				< ! Servlet Parameter
   	<init-param>
   		<param-name>servletName</param-name>
   		<param-value>HelloServlet</param-value>
@@ -62,13 +62,13 @@
   		<param-name>description</param-name>
   		<param-value>나의 첫 번째 서블릿입니다.</param-value>
   	</init-param>
-  </servlet>
+  </servlet -->
   
   <!-- Servlet Mapping 등록 : URL Mapper -->
-  <servlet-mapping>
+  <!--  servlet-mapping>
   	<servlet-name>MyFirstAervlet</servlet-name>
   	<url-pattern>/hs</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping -->
   
   
   <!-- error page -->
