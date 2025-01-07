@@ -73,8 +73,11 @@ public class HelloServlet  extends HttpServlet {
 		// name 파라미터를 받아서 
 		String name = req.getParameter("name");
 		
+		// name 파라미터가 없으면 -> Error
 		if (name == null) {
 			name = "Anonymous";
+			throw new ServletException("name 파라미터는 필수입니다.");
+			
 		}
 		
 		// 환영 멧 ㅔ지 출력
